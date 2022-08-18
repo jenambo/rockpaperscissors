@@ -63,8 +63,8 @@ function winner() {
     } else {
         champion += "Wow, it's a tie!";
     }
-    return[champion]
+    return champion;
 }
 
-console.log(game());
+game();
 console.log(winner());
