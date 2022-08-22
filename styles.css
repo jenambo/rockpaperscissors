@@ -1,0 +1,89 @@
+body{
+    font-family: 'Silkscreen', cursive;
+    background-color: #1F201F;
+}
+
+h1 {
+    font-size: 50px;
+    color: #3772FF;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px #2EC4B6;
+
+}
+
+h3, h2 {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+h2 {
+    text-shadow: 2px 2px 4px #2EC4B6;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    color: #FFFFFF;
+}
+
+.heading, .mainSection, .footer {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.heading, .footer {
+    flex-direction: column;
+}
+
+.mainSection {
+    justify-content: center;
+    gap: 25%;
+}
+
+.portrait {
+    width: 30%;
+    height: 30%;
+}
+
+.playerOne, .computerMR {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+button, .buttonImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    gap: 5px;
+}
+
+button {
+    background-color: #242038;
+    border: 2px solid #181626;
+    height: 80px;
+    width: 80px;
+    border-radius: 25px;
+}
+
+.buttonImage {
+    height: 50px;
+    width: 50px;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: black;
+    text-decoration: none;
+}
