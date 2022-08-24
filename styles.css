@@ -26,7 +26,7 @@ ul {
     color: #FFFFFF;
 }
 
-.heading, .mainSection, .footer {
+.heading, .mainSection, .footer, .credit {
     display: flex;
     align-items: center;
     padding: 50px;
@@ -61,7 +61,7 @@ button, .buttonImage {
 }
 
 .buttons {
-    gap: 5px;
+    gap: 10px;
 }
 
 button {
@@ -72,11 +72,16 @@ button {
     border-radius: 25px;
 }
 
+button:hover{
+    color: #2EC4B6;
+    box-shadow: 0 2px 10px #209186;
+
+}
+
 .buttonImage {
     height: 50px;
     width: 50px;
 }
-
 
 .buttons {
     display: flex;
@@ -87,3 +92,4 @@ a, a:link, a:visited, a:hover, a:active {
     color: black;
     text-decoration: none;
 }
+
