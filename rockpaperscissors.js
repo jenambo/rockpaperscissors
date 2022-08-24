@@ -33,6 +33,7 @@ function playRound(computerSelection, playerSelection){
     let message = "";
     if (computerSelection === "rock" && playerSelection === "rock") {
         message += "It's a Tie!";
+        roundWin.textContent = message
     } else if (computerSelection === "rock" && playerSelection === "scissors") {
         message += "Computer Wins!";
         computerWins = computerWins + 1;
