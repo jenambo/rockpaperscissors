@@ -4,6 +4,10 @@ let playerWins = 0;
 const rock = document.querySelector("#p1Rock")
 const paper = document.querySelector("#p1Paper")
 const scissors = document.querySelector("#p1Scissors")
+// const cpuRock = document.querySelector("#cpuRock")
+// const cpuPaper = document.querySelector("#cpuPaper")
+// const cpuScissors = document.querySelector("#cpuScissors")
+
 let poneW = document.querySelector("#poneW")
 let alphaW = document.querySelector("#alphaW")
 let roundWin = document.querySelector("#roundWin")
