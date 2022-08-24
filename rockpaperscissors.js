@@ -6,11 +6,13 @@ const paper = document.querySelector("#p1Paper")
 const scissors = document.querySelector("#p1Scissors")
 let poneW = document.querySelector("#poneW")
 let alphaW = document.querySelector("#alphaW")
+let roundWin = document.querySelector("#roundWin")
 
 
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     let computerSelection = choices[Math.floor(Math.random()*choices.length)];
+
     return computerSelection;
 }
 
@@ -35,34 +37,43 @@ function playRound(computerSelection, playerSelection){
         message += "Computer Wins!";
         computerWins = computerWins + 1;
         alphaW.textContent = computerWins
+        roundWin.textContent = message
     } else if (computerSelection === "rock" && playerSelection === "paper") {
         message += "Player Wins!";
         playerWins = playerWins + 1;
         poneW.textContent = playerWins
+        roundWin.textContent = message
     } else if (computerSelection === "scissors" && playerSelection === "rock") {
         message += "Player Wins!";
         playerWins = playerWins + 1;
         poneW.textContent = playerWins
+        roundWin.textContent = message
     } else if (computerSelection === "scissors" && playerSelection === "paper") {
         message += "Computer Wins!";
         computerWins = computerWins + 1;
         alphaW.textContent = computerWins
+        roundWin.textContent = message
     } else if (computerSelection === "scissors" && playerSelection === "scissors") {
         message += "Its a tie!";
+        roundWin.textContent = message
     } else if (computerSelection === "paper" && playerSelection === "rock") {
         message += "Computer Wins!";
         computerWins = computerWins + 1;
         alphaW.textContent = computerWins
+        roundWin.textContent = message
     } else if (computerSelection === "paper" && playerSelection === "scissors") {
         message += "Player Wins!";
         playerWins = playerWins + 1;
         poneW.textContent = playerWins
+        roundWin.textContent = message
     } else if (computerSelection === "paper" && playerSelection === "paper") {
         message += "Its a Tie!";
+        roundWin.textContent = message
     } else {
         message += "Everyone loses!";
+        roundWin.textContent = message
     }
-    console.log(computerSelection, playerSelection, message, computerWins, playerWins);
+    // console.log(computerSelection, playerSelection, message, computerWins, playerWins);
 
 }
 
